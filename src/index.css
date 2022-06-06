@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #a6a6a6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+select {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.nav button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  width: 800px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col-6 {
+  width: calc(50% - 10px);
+}
+
+.form-group label,
+.row label {
+  display: block;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background: rgb(2, 2, 17);
+  cursor: pointer;
+}
+.input-error {
+  border-color: #ff0606;
+  transition: all 0.2s ease-in-out;
+}
+.input-success {
+  border-color: #007bff;
+  transition: all 0.2s ease-in-out;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+  padding: 0 10px;
+}
+
+.row-gender {
+  display: flex;
+  width: 50%;
+  justify-content: start;
+}
+.gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+.gender span {
+  flex: 1;
+}
+.gender input {
+  width: fit-content;
+}
