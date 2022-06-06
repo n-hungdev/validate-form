@@ -91,6 +91,7 @@ const ReactHookForm = () => {
         <div className="col-6">
           <label htmlFor="city">City</label>
           <select {...register('city')}>
+            <option value="">Select city</option>
             {cities.map((city) => (
               <option key={city.code} value={city.code}>
                 {city.name}

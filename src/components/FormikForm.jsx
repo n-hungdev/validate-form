@@ -108,7 +108,7 @@ const FormikForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="confirmPassword">Re-Password </label>
+              <label htmlFor="confirmPassword">Confirm Password </label>
               <Field
                 id="confirmPassword"
                 name="confirmPassword"
@@ -137,9 +137,7 @@ const FormikForm = () => {
                       : 'input-success'
                   }
                 >
-                  <option value="" key="-1">
-                    Select City
-                  </option>
+                  <option value="">Select City</option>
                   {cities &&
                     cities.map((city) => (
                       <option key={city.code} value={city.code}>
