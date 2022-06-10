@@ -49,7 +49,7 @@ const FormikForm = () => {
                   }
                 />
                 <ErrorMessage
-                  name="lastName"
+                  name="firstName"
                   render={(msg) => <p className="error">{msg}</p>}
                 />
               </div>
